@@ -56,31 +56,41 @@ Each user is responsible for checking the content of datasets and the applicable
 
 You can read details about adding a tutorial in our [CONTRIBUTING GUIDELINES](CONTRIBUTING.md).
 
-### 4. List of notebooks and examples
-#### <ins>**2D classification**</ins>
+### 4. List of notebooks and examples 所有的笔记和示例
+#### <ins>**2D classification 2D图像分类**</ins>
 ##### [mednist_tutorial](./2d_classification/mednist_tutorial.ipynb)
 This notebook shows how to easily integrate MONAI features into existing PyTorch programs.
 It's based on the MedNIST dataset which is very suitable for beginners as a tutorial.
 This tutorial also makes use of MONAI's in-built occlusion sensitivity functionality.
+这个笔记本展示了如何将MONAI功能嵌入到现有的PyTorch程序中。
+基于MedNIST数据集，这是一个非常适合新手教程的示例。
+这个教程还使用了MONAI的内置Occlusion Sensitivity功能。
 
-#### <ins>**2D segmentation**
+#### <ins>**2D segmentation 2D图像分隔**
 ##### [torch examples](./2d_segmentation/torch)
 Training and evaluation examples of 2D segmentation based on UNet and synthetic dataset.
 The examples are standard PyTorch programs and have both dictionary-based and array-based versions.
+这个示例是基于UNet和合成数据集的训练和评估示例。
+该示例是标准的PyTorch程序，具有字典和数组两种类型的转换版本。
 
-#### <ins>**3D classification**</ins>
+#### <ins>**3D classification 3D图像分类**</ins>
 ##### [ignite examples](./3d_classification/ignite)
 Training and evaluation examples of 3D classification based on DenseNet3D and [IXI dataset](https://brain-development.org/ixi-dataset).
 The examples are PyTorch Ignite programs and have both dictionary-based and array-based transformation versions.
+这个示例基于DenseNet3D和[IXI数据集](https://brain-development.org/ixi-dataset)的训练和评估示例。
+该示例是PyTorch Ignite程序，具有字典和数组两种类型的转换版本。
 ##### [torch examples](./3d_classification/torch)
 Training and evaluation examples of 3D classification based on DenseNet3D and [IXI dataset](https://brain-development.org/ixi-dataset).
+该训练和评估示例基于DenseNet3D和[IXI数据集](https://brain-development.org/ixi-dataset)。
 The examples are standard PyTorch programs and have both dictionary-based and array-based transformation versions.
+这个示例是标准的PyTorch程序，具有字典和数组两种类型的转换版本。
 
-#### <ins>**3D regression**</ins>
+#### <ins>**3D regression 3D图像回归**</ins>
 ##### [densenet_training_array.ipynb](./3d_regression/densenet_training_array.ipynb)
 Training and evaluation examples of 3D regression based on DenseNet3D and [IXI dataset](https://brain-development.org/ixi-dataset).
+该训练和评估示例基于DenseNet3D和[IXI数据集](https://brain-development.org/ixi-dataset)。
 
-#### <ins>**3D segmentation**</ins>
+#### <ins>**3D segmentation 3D图像分割**</ins>
 ##### [ignite examples](./3d_segmentation/ignite)
 Training and evaluation examples of 3D segmentation based on UNet3D and synthetic dataset.
 The examples are PyTorch Ignite programs and have both dictionary-base and array-based transformations.
@@ -114,11 +124,11 @@ This notebook demonstrates how to construct a training workflow of UNETR on mult
 ##### [unetr_btcv_segmentation_3d_lightning](./3d_segmentation/unetr_btcv_segmentation_3d_lightning.ipynb)
 This tutorial demonstrates how MONAI can be used in conjunction with [PyTorch Lightning](https://www.pytorchlightning.ai/) framework to construct a training workflow of UNETR on multi-organ segmentation task using the BTCV challenge dataset.
 
-#### <ins>**2D registration**</ins>
+#### <ins>**2D registration 2D图像配准**</ins>
 ##### [registration using mednist](./2d_registration/registration_mednist.ipynb)
 This notebook shows a quick demo for learning based affine registration of `64 x 64` X-Ray hands.
 
-#### <ins>**3D registration**</ins>
+#### <ins>**3D registration 3D图像配准**</ins>
 ##### [3D registration using paired lung CT](./3d_registration/paired_lung_ct.ipynb)
 This tutorial shows how to use MONAI to register lung CT volumes acquired at different time points for a single patient.
 
@@ -131,14 +141,16 @@ This tutorial demonstrates the use of MONAI for training of registration and seg
 #### <ins>**Deepgrow**</ins>
 ##### [Deepgrow](./deepgrow)
 The example show how to train/validate a 2D/3D deepgrow model.  It also demonstrates running an inference for trained deepgrow models.
+这个示例显示如何训练/验证一个2D/3Ddeepgrow模型。它还演示了运行已训练的deepgrow模型的推理。
 
 #### <ins>**DeepEdit**</ins>
 ##### [DeepEdit](./deepedit/ignite)
 This example shows how to train/test a DeepEdit model. In this tutorial there is a Notebook that shows how to run
 inference on a pretrained DeepEdit model.
+这个示例展示了如何训练/测试一个DeepEdit模型。在这个教程中，有一个笔记本，展示了如何运行一个预先训练的DeepEdit模型。
 
 
-#### <ins>**Deployment**</ins>
+#### <ins>**Deployment 部署**</ins>
 ##### [BentoML](./deployment/bentoml)
 This is a simple example of training and deploying a MONAI network with [BentoML](https://www.bentoml.ai/) as a web server, either locally using the BentoML repository or as a containerized service.
 ##### [Ray](./deployment/ray)
@@ -146,7 +158,7 @@ This uses the previous notebook's trained network to demonstrate deployment a we
 ##### [Triton](./deployment/Triton/)
 This is example walks through using a Triton Server and Python client using MONAI on the MedNIST classification problem. The demo is self contained and the Readme explains how to use Triton "backends" to inject the MONAI code into the server.  [See Triton Inference Server/python_backend documentation](https://github.com/triton-inference-server/python_backend#usage)
 
-#### <ins>**Experiment Management**</ins>
+#### <ins>**Experiment Management 实验管理**</ins>
 ##### [Aim](./experiment_management/spleen_segmentation_aim.ipynb)
 An example of experiment management with [Aim](https://aimstack.io/aim-monai-tutorial/), using 3D spleen segmentation as an example.
 ##### [MLFlow](./experiment_management/spleen_segmentation_mlflow.ipynb)
@@ -170,7 +182,7 @@ The example show how to execute the 3d segmentation torch tutorial on a federate
 ##### [Breast Density FL Challenge](./federated_learning/breast_density_challenge)
 Reference implementation used in MICCAI 2022 [ACR-NVIDIA-NCI Breast Density FL challenge](http://breastdensityfl.acr.org).
 
-#### <ins>**Digital Pathology**</ins>
+#### <ins>**Digital Pathology 数字病理学**</ins>
 ##### [Whole Slide Tumor Detection](./pathology/tumor_detection)
 The example shows how to train and evaluate a tumor detection model (based on patch classification) on whole-slide histopathology images.
 
@@ -189,7 +201,7 @@ This tutorial demonstrates how to construct a training workflow of [HoVerNet](ht
 ##### [Nuclei Classification](./pathology/nuclick#nuclei-classification-model)
 The notebook demonstrates examples of training and inference pipelines with interactive annotation for pathology, NuClick is used for delineating nuclei, cells and a squiggle for outlining glands.
 
-#### <ins>**Acceleration**</ins>
+#### <ins>**Acceleration 加速训练**</ins>
 ##### [fast_model_training_guide](./acceleration/fast_model_training_guide.md)
 The document introduces details of how to profile the training pipeline, how to analyze the dataset and select suitable algorithms, and how to optimize GPU utilization in single GPU, multi-GPUs or even multi-nodes.
 
@@ -300,14 +312,14 @@ This tutorial shows several visualization approaches for 3D image during transfo
 #### [Auto3DSeg](./auto3dseg/)
 This folder shows how to run the comprehensive Auto3DSeg pipeline with minimal inputs and customize the Auto3Dseg modules to meet different user requirements.
 
-#### <ins>**Self-Supervised Learning**</ins>
+#### <ins>**Self-Supervised Learning 自我监督学习**</ins>
 ##### [self_supervised_pretraining](self_supervised_pretraining/vit_unetr_ssl/ssl_train.ipynb)
 This tutorial shows how to construct a training workflow of self-supervised learning where unlabeled data is utilized. The tutorial shows how to train a model on TCIA dataset of unlabeled Covid-19 cases.
 
 ##### [self_supervised_pretraining_based_finetuning](self_supervised_pretraining/vit_unetr_ssl/ssl_finetune.ipynb)
 This tutorial shows how to utilize pre-trained weights from the self-supervised learning framework where unlabeled data is utilized. This tutorial shows how to train a model of multi-class 3D segmentation using pretrained weights.
 
-#### [Generative Model](./generative)
+#### [Generative Model 生成式模型](./generative)
 ##### [3D latent diffusion model](./generative/3d_ldm)
 This tutorial shows the use cases of training and validating a 3D Latent Diffusion Model.
 
